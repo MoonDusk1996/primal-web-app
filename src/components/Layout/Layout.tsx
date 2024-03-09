@@ -119,7 +119,7 @@ const Layout: Component = () => {
           <Show when={account?.isKeyLookupDone}>
             <div class={styles.centerContent}>
               <div id="new_note_input" class={styles.headerFloater}>
-                <NewNote onSuccess={onNewNotePosted}/>
+                <NewNote onSuccess={onNewNotePosted} />
               </div>
 
               <div>

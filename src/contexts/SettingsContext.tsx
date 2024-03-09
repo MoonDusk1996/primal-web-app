@@ -93,7 +93,7 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
   const account = useAccountContext();
   const intl = useIntl();
 
-// ACTIONS --------------------------------------
+  // ACTIONS --------------------------------------
 
   const setDefaultZapAmount = (option: ZapOption, temp?: boolean) => {
     updateStore('defaultZap', () => option);
@@ -406,18 +406,18 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
             updateStore('availableZapOptions', () => [...zapConfig]);
           }
           else {
-            const newConfig = defaultZapOptions.map((o, i) => ({ ...o, amount: zapOptions[i]}));
+            const newConfig = defaultZapOptions.map((o, i) => ({ ...o, amount: zapOptions[i] }));
             updateStore('availableZapOptions', () => [...newConfig]);
           }
 
-          updateStore('defaultZapAmountOld' , () => defaultZapAmount);
+          updateStore('defaultZapAmountOld', () => defaultZapAmount);
           updateStore('zapOptionsOld', () => zapOptions);
 
           if (notifications) {
             updateStore('notificationSettings', () => ({ ...notifications }));
           }
           else {
-            updateStore('notificationSettings', () => ({ ...defaultNotificationSettings}));
+            updateStore('notificationSettings', () => ({ ...defaultNotificationSettings }));
           }
 
           updateStore('applyContentModeration', () => applyContentModeration === false ? false : true);
@@ -426,14 +426,14 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
             updateStore('contentModeration', () => [...defaultContentModeration]);
           }
           else if (Array.isArray(contentModeration)) {
-            for (let i=0; i < contentModeration.length; i++) {
+            for (let i = 0; i < contentModeration.length; i++) {
               const m = contentModeration[i];
               const index = store.contentModeration.findIndex(x => x.name === m.name);
 
               updateStore(
                 'contentModeration',
                 index < 0 ? store.contentModeration.length : index,
-                () => ({...m}),
+                () => ({ ...m }),
               );
             }
           }
@@ -496,7 +496,7 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
     pubkey && getSettings(pubkey, subid);
   }
 
-// SOCKET HANDLERS ------------------------------
+  // SOCKET HANDLERS ------------------------------
 
   const onMessage = (event: MessageEvent) => {
     // const message: NostrEvent | NostrEOSE = JSON.parse(event.data);
@@ -514,7 +514,7 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
   };
 
 
-// EFFECTS --------------------------------------
+  // EFFECTS --------------------------------------
 
   onMount(() => {
     // Set global theme, this is done to avoid changing the theme
@@ -608,7 +608,7 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
     );
   });
 
-// STORES ---------------------------------------
+  // STORES ---------------------------------------
 
 
   const [store, updateStore] = createStore<SettingsContextStore>({
@@ -632,7 +632,7 @@ export const SettingsProvider = (props: { children: ContextChildren }) => {
     },
   });
 
-// RENDER ---------------------------------------
+  // RENDER ---------------------------------------
 
   return (
     <SettingsContext.Provider value={store}>

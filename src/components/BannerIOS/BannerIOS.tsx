@@ -9,7 +9,7 @@ export const isIOS = () => {
   return /(iPad|iPhone|iPod)/.test(navigator.userAgent);
 };
 
-const BannerIOS: Component< { id?: string } > = (props) => {
+const BannerIOS: Component<{ id?: string }> = (props) => {
 
   const linkToiOS = () => {
     const appstoreFail = 'https://apps.apple.com/us/app/primal/id1673134518';
@@ -22,10 +22,10 @@ const BannerIOS: Component< { id?: string } > = (props) => {
       // If the app is not installed the script will wait for 2sec and redirect to web.
       setTimeout(function() {
         window.location.href = appstoreFail;
-      } , 2_000);
+      }, 2_000);
     } else {
-        // Launch the website
-        window.location.href = appstoreFail;
+      // Launch the website
+      window.location.href = appstoreFail;
     }
   };
 

@@ -1,6 +1,7 @@
 import { ContentModeration, FeedPage, } from "./types/primal";
 import logoFire from './assets/icons/logo_fire.svg';
 import logoIce from './assets/icons/logo_ice.svg';
+import tree_logo from './assets/icons/tree_logo.svg';
 
 export const second = 1000;
 export const minute = 60 * second;
@@ -15,7 +16,7 @@ export const emptyPage: FeedPage = {
   noteActions: {},
 }
 
-export const nostrHighlights ='9a500dccc084a138330a1d1b2be0d5e86394624325d25084d3eca164e7ea698a';
+export const nostrHighlights = '9a500dccc084a138330a1d1b2be0d5e86394624325d25084d3eca164e7ea698a';
 
 export const trendingFeed = {
   name: 'Trending, my network',
@@ -42,13 +43,19 @@ export const themes = [
     dark: true,
   },
   {
-    name:  'ice',
+    name: 'ice',
     label: 'ice wave',
     logo: logoIce,
   },
+  {
+    name: 'woodland',
+    label: 'woodland wave',
+    logo: tree_logo,
+    dark: true
+  },
 ];
 
-export const minKnownProfiles: {"names": Record<string,string>} = {
+export const minKnownProfiles: { "names": Record<string, string> } = {
   "names": {
     "miljan": "d61f3bc5b3eb4400efdae6169a5c17cabf3246b514361de939ce4a1a0da6ef4a",
     "marko": "123afae7d187ba36d6ddcd97dbf4acc59aeffe243f782592ff8f25ed579df306",
@@ -86,7 +93,7 @@ export const scopeLabels: Record<string, string> = {
 
 export const noKey = 'no-key';
 
-export enum Kind  {
+export enum Kind {
   Metadata = 0,
   Text = 1,
   RecommendRelay = 2,
@@ -335,7 +342,7 @@ export const defaultContentModeration: ContentModeration[] = [
   nsfwContentModeration,
 ];
 
-export const algoNpub ='npub1tkpg9lyfgy83c4mgrgkrhzl90t732ekzvt73m6658xva88g5rj6qy6ntw4';
+export const algoNpub = 'npub1tkpg9lyfgy83c4mgrgkrhzl90t732ekzvt73m6658xva88g5rj6qy6ntw4';
 
 export const specialAlgos = ['primal_spam', 'primal_nsfw'];
 

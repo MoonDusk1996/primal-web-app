@@ -1,4 +1,3 @@
-
 .themeOption {
   width: 128px;
   >p {
@@ -40,7 +39,7 @@
 
 .sunset {
   @include themeOptionButton();
-  background-color: var(--dark-back);
+  background-color: (--dark-back);
 }
 
 .midnight {
@@ -58,6 +57,11 @@
   background-color: var(--light-back);
 }
 
+.woodland{
+  @include themeOptionButton();
+  background-color: var(--dark-back);
+}
+
 .themeChecked {
   position: absolute;
   bottom: 4px;
@@ -69,7 +73,7 @@
   padding: 0px;
   align-items: center;
   justify-content: center;
-  background: var(--accent);
+  background: (--accent);
   border-radius: 50%;
   >img {
     width: 10px;

@@ -276,3 +276,72 @@
   }
 
 }
+
+@mixin woodland_wave{
+  --brand-text: #D5D5D5;
+
+  --background-site: #000000;
+  --background-card: #000000;
+  --background-input: #222222;
+  --background-sheet: #121212;
+  --background-header-input: #1a1a1a;
+
+  --devider: #222222;
+
+  --text-primary: #ffffff;
+  --text-primary-button: #ffffff;
+  --text-secondary: #aaaaaa;
+  --text-secondary-2: #aaaaaa;
+  --text-tertiary: #757575;
+  --text-tertiary-2: #666666;
+
+  --subtile-devider: #444444;
+
+  --accent: #188339;
+  --accent-links: #188339;
+  --accent-dm: #188339;
+
+  --brand-gradient: linear-gradient(128deg, #14B9FF 0%, #690DFF 100%);
+
+  --success-bright: #66E205;
+  --success-dim: #487E1F;
+  --warning-bright: #FA3C3C;
+  --warning-bright-shadow: #e2050588;
+  --warning-dim: #480101;
+
+  --active-reply: #cccccc;
+  --active-zap: #ffa02f;
+  --active-liked: #f800c1;
+  --active-reposted: #66e205;
+  --background-modal: #00000070;
+
+  --profile-indicator-border: var(--background-site);
+
+  --check-image: url('./assets/icons/check.svg');
+  --logo: url('./assets/icons/tree_logo.svg');
+  --icon-follows: url('./assets/icons/follows.svg');
+  --icon-tribe: url('./assets/icons/tribe.svg');
+  --icon-global: url('./assets/icons/global.svg');
+  --icon-network: url('./assets/icons/network.svg');
+
+  --icon-follows-latest: url('./assets/icons/follows_latest.svg');
+  --icon-follows-popular: url('./assets/icons/follows_popular.svg');
+  --icon-follows-trending: url('./assets/icons/follows_trending.svg');
+
+  --icon-tribe-latest: url('./assets/icons/tribe_latest.svg');
+  --icon-tribe-popular: url('./assets/icons/tribe_popular.svg');
+  --icon-tribe-trending: url('./assets/icons/tribe_trending.svg');
+
+  --icon-global-latest: url('./assets/icons/global_latest.svg');
+  --icon-global-popular: url('./assets/icons/global_popular.svg');
+  --icon-global-trending: url('./assets/icons/global_trending.svg');
+
+  --icon-network-latest: url('./assets/icons/network_latest.svg');
+  --icon-network-popular: url('./assets/icons/network_popular.svg');
+  --icon-network-trending: url('./assets/icons/network_trending.svg');
+
+
+  select {
+    background-color: var(--background-site);
+  }
+}

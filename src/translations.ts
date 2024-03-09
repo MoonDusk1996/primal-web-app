@@ -410,7 +410,7 @@ export const actions = {
 
 export const branding = {
   id: 'branding',
-  defaultMessage: 'Primal',
+  defaultMessage: 'Nostr',
   description: 'Brand name',
 };
 
@@ -552,7 +552,7 @@ export const explore = {
   statDisplay: {
     users: {
       id: 'explore.stats.users',
-      defaultMessage:'Users',
+      defaultMessage: 'Users',
       description: 'Label for number of users stats',
     },
     pubkeys: {
@@ -1535,7 +1535,7 @@ export const settings = {
         defaultMessage: 'Pick a longer display name (e. g. “Satoshi Nakamoto”)',
         description: 'Help for displayName input on edit profile page',
       },
-      placeholder : {
+      placeholder: {
         id: 'pages.settings.profile.displayName.placeholder',
         defaultMessage: 'Enter display name',
         description: 'Placeholder for display name input on edit profile page',
@@ -1557,7 +1557,7 @@ export const settings = {
         defaultMessage: 'Pick a short user handle (e. g. “satoshi”)',
         description: 'Help for name input on edit profile page',
       },
-      placeholder : {
+      placeholder: {
         id: 'pages.settings.profile.name.placeholder',
         defaultMessage: 'Enter username',
         description: 'Placeholder for name input on edit profile page',
@@ -1579,7 +1579,7 @@ export const settings = {
         defaultMessage: 'Website',
         description: 'Label for website input on edit profile page',
       },
-      placeholder : {
+      placeholder: {
         id: 'pages.settings.profile.website.placeholder',
         defaultMessage: 'https://www.mysite.com',
         description: 'Placeholder for website input on edit profile page',
@@ -1591,7 +1591,7 @@ export const settings = {
         defaultMessage: 'About Me',
         description: 'Label for about input on edit profile page',
       },
-      placeholder : {
+      placeholder: {
         id: 'pages.settings.profile.about.placeholder',
         defaultMessage: 'Say something about yourself',
         description: 'Placeholder for about input on edit profile page',
@@ -1603,7 +1603,7 @@ export const settings = {
         defaultMessage: 'Lightning Address',
         description: 'Label for lud16 input on edit profile page',
       },
-      placeholder : {
+      placeholder: {
         id: 'pages.settings.profile.lud16.placeholder',
         defaultMessage: 'Enter your LN address',
         description: 'Placeholder for lud16 input on edit profile page',
@@ -1615,7 +1615,7 @@ export const settings = {
         defaultMessage: 'Verified Nostr Id (Nip-05)',
         description: 'Label for nip-05 input on edit profile page',
       },
-      placeholder : {
+      placeholder: {
         id: 'pages.settings.profile.nip05.placeholder',
         defaultMessage: 'Enter your NIP-05 Verified Nostr ID',
         description: 'Placeholder for nip-05 input on edit profile page',
@@ -1627,7 +1627,7 @@ export const settings = {
         defaultMessage: 'Avatar Image Url',
         description: 'Label for avatar input on edit profile page',
       },
-      placeholder : {
+      placeholder: {
         id: 'pages.settings.profile.picture.placeholder',
         defaultMessage: 'Enter your avatar url',
         description: 'Placeholder for avatar input on edit profile page',
@@ -1639,7 +1639,7 @@ export const settings = {
         defaultMessage: 'Banner Image Url',
         description: 'Label for banner input on edit profile page',
       },
-      placeholder : {
+      placeholder: {
         id: 'pages.settings.profile.banner.placeholder',
         defaultMessage: 'Enter your banner url',
         description: 'Placeholder for banner input on edit profile page',

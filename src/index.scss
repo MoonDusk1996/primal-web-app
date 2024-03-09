@@ -27,11 +27,14 @@
 :root[data-theme="ice"] {
   @include ice_wave();
 }
+:root[data-theme="woodland"] {
+  @include woodland_wave();
+}
 
 /* Automatically enabled if user has Dark mode enabled */
 @media only screen and (prefers-color-scheme: dark) {
   :root {
-    @include sunset_wave();
+    @include woodland_wave();
   }
 }
 
